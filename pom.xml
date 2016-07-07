@@ -11,8 +11,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <scala.version>2.10.4</scala.version>
-        <spark.version>2.0.0-SNAPSHOT</spark.version>
+        <scala.version>2.11.8</scala.version>
+        <spark.version>2.0.0-ds</spark.version>
         <hive.version>1.2.1.spark</hive.version>
         <PermGen>64m</PermGen>
         <MaxPermGen>512m</MaxPermGen>
@@ -47,10 +47,10 @@
 
     <dependencies>
         <!-- spark -->
-        <!--
+
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.10</artifactId>
+            <artifactId>spark-core_2.11</artifactId>
             <version>${spark.version}</version>
             <exclusions>
                 <exclusion>
@@ -65,27 +65,27 @@
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-mllib_2.10</artifactId>
+            <artifactId>spark-mllib_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-yarn_2.10</artifactId>
+            <artifactId>spark-yarn_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-sql_2.10</artifactId>
+            <artifactId>spark-sql_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-hive_2.10</artifactId>
+            <artifactId>spark-hive_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-hive-thriftserver_2.10</artifactId>
+            <artifactId>spark-hive-thriftserver_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
@@ -105,12 +105,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming_2.10</artifactId>
+            <artifactId>spark-streaming_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming-kafka_2.10</artifactId>
+            <artifactId>spark-streaming-kafka-0-8_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
         <dependency>
@@ -128,7 +128,6 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.27</version>
         </dependency>
-        -->
     </dependencies>
 
     <build>

@@ -1,14 +1,14 @@
-package com.zmyuan.spark.submit
+package org.apache.spark.submit.demo
 
-import org.apache.spark.sql.{SparkSession, SQLContext}
-import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.io.StdIn
 
 /**
   * Created by zhudebin on 16/6/29.
   */
-object YarnClientSubmit {
+object SparkSQLYarnClientSubmit {
 
   def main(args: Array[String]) {
 
@@ -38,6 +38,7 @@ object YarnClientSubmit {
     val sc = new SparkContext(conf)
 
     val session = SparkSession.builder().enableHiveSupport().config(conf).getOrCreate()
+//    val session = SparkSession.builder().enableHiveSupport().config(conf).getOrCreate()
 
 //    session.
     session.sql("show databases").collect().foreach(println)
