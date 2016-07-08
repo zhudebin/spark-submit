@@ -37,8 +37,12 @@ object DataframeGroupDemo {
 
     val df = spark.createDataFrame(rdd, schema)
 
-    df.groupBy("age").agg($"age", max("name"), sum("id")).collect().foreach(println _)
+//    df.groupBy("age").agg($"age", max("name"), sum("id")).collect().foreach(println _)
 
+    val aggDf = df.groupBy("age").agg(Map("name" -> "max", "id" -> "sum"))
+      aggDf.collect().foreach(println _)
+    println("--------- schema ---------")
+    aggDf.schema.foreach(println _)
 
     spark.stop()
 
