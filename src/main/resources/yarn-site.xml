@@ -12,27 +12,27 @@
   </property>
   <property>
     <name>yarn.resourcemanager.address</name>
-    <value>e101:8032</value>
+    <value>e51:8032</value>
   </property>
   <property>
     <name>yarn.resourcemanager.admin.address</name>
-    <value>e101:8033</value>
+    <value>e51:8033</value>
   </property>
   <property>
     <name>yarn.resourcemanager.scheduler.address</name>
-    <value>e101:8030</value>
+    <value>e51:8030</value>
   </property>
   <property>
     <name>yarn.resourcemanager.resource-tracker.address</name>
-    <value>e101:8031</value>
+    <value>e51:8031</value>
   </property>
   <property>
     <name>yarn.resourcemanager.webapp.address</name>
-    <value>e101:8088</value>
+    <value>e51:8088</value>
   </property>
   <property>
     <name>yarn.resourcemanager.webapp.https.address</name>
-    <value>e101:8090</value>
+    <value>e51:8090</value>
   </property>
   <property>
     <name>yarn.resourcemanager.client.thread-count</name>
@@ -56,7 +56,7 @@
   </property>
   <property>
     <name>yarn.scheduler.maximum-allocation-mb</name>
-    <value>20480</value>
+    <value>10240</value>
   </property>
   <property>
     <name>yarn.scheduler.minimum-allocation-vcores</name>
@@ -68,7 +68,7 @@
   </property>
   <property>
     <name>yarn.scheduler.maximum-allocation-vcores</name>
-    <value>24</value>
+    <value>4</value>
   </property>
   <property>
     <name>yarn.resourcemanager.amliveliness-monitor.interval-ms</name>

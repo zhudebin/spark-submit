@@ -56,11 +56,11 @@
   </property>
   <property>
     <name>mapreduce.job.reduces</name>
-    <value>24</value>
+    <value>4</value>
   </property>
   <property>
     <name>mapreduce.task.io.sort.mb</name>
-    <value>512</value>
+    <value>256</value>
   </property>
   <property>
     <name>mapreduce.map.speculative</name>
@@ -76,19 +76,19 @@
   </property>
   <property>
     <name>mapreduce.jobhistory.address</name>
-    <value>e102:10020</value>
+    <value>e51:10020</value>
   </property>
   <property>
     <name>mapreduce.jobhistory.webapp.address</name>
-    <value>e102:19888</value>
+    <value>e51:19888</value>
   </property>
   <property>
     <name>mapreduce.jobhistory.webapp.https.address</name>
-    <value>e102:19890</value>
+    <value>e51:19890</value>
   </property>
   <property>
     <name>mapreduce.jobhistory.admin.address</name>
-    <value>e102:10033</value>
+    <value>e51:10033</value>
   </property>
   <property>
     <name>mapreduce.framework.name</name>
@@ -132,7 +132,7 @@
   </property>
   <property>
     <name>mapreduce.map.memory.mb</name>
-    <value>2048</value>
+    <value>0</value>
   </property>
   <property>
     <name>mapreduce.map.cpu.vcores</name>
@@ -140,7 +140,7 @@
   </property>
   <property>
     <name>mapreduce.reduce.memory.mb</name>
-    <value>2048</value>
+    <value>0</value>
   </property>
   <property>
     <name>mapreduce.reduce.cpu.vcores</name>
